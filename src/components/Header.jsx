@@ -106,14 +106,25 @@ export default function Header({ currentView, onViewChange }) {
                 </button>
               )}
 
-              <a 
-                href="https://vfs.vemurigroup.in/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hidden md:inline-flex items-center justify-center px-4 lg:px-6 py-2.5 text-sm font-semibold text-gray-700 bg-white border border-gray-200 hover:bg-gray-50 rounded-full transition-colors"
-              >
-                Client Login
-              </a>
+              <div className="hidden md:flex items-center p-1 bg-gray-50 border border-gray-100 rounded-full shadow-sm hover:shadow-md transition-shadow">
+                <a 
+                  href="https://vfsoffice.vemurigroup.in/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-xs font-bold text-gray-600 hover:text-primary-600 hover:bg-white rounded-full transition-all hover:shadow-sm"
+                >
+                  VFS Office 
+                </a>
+                <div className="w-px h-4 bg-gray-300 mx-1"></div>
+                <a 
+                  href="https://vfs.vemurigroup.in/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 text-xs font-bold text-gray-600 hover:text-primary-600 hover:bg-white rounded-full transition-all hover:shadow-sm"
+                >
+                  Client Login
+                </a>
+              </div>
               
               <a 
                 href="#contact"
@@ -178,6 +189,15 @@ export default function Header({ currentView, onViewChange }) {
                 Back to Main Website
               </button>
             )}
+            <a 
+              href="https://vfsoffice.vemurigroup.in/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary-700 bg-primary-50 hover:bg-primary-100 rounded-full mt-3"
+              onClick={() => setIsOpen(false)}
+            >
+              Office Portal
+            </a>
             <a 
               href="https://vfs.vemurigroup.in/" 
               target="_blank"
