@@ -50,7 +50,7 @@ function App() {
         )}
       </main>
       
-      {currentView === 'home' && <Footer />}
+      {currentView === 'home' && <Footer onViewChange={setCurrentView} />}
     </div>
   )
 }

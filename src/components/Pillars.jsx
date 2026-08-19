@@ -4,8 +4,8 @@ import { ShieldAlert, TrendingUp } from 'lucide-react'
 
 export default function Pillars() {
   return (
-    <section id="pillars" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 md:px-6">
+    <section id="pillars" className="py-8 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight">The 2 Pillars of Wealth</h2>
           <p className="mt-4 text-xl text-primary-600 font-medium">Protect first, grow next</p>

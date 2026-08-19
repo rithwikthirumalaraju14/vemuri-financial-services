@@ -128,7 +128,7 @@ export default function Compliance() {
   ]
 
   return (
-    <section id="compliance" className="py-24 bg-white relative">
+    <section id="compliance" className="py-8 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">

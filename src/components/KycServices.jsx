@@ -31,7 +31,7 @@ export default function KycServices() {
   ]
 
   return (
-    <section id="kyc" className="py-24 bg-gray-50 relative">
+    <section id="kyc" className="py-8 bg-gray-50 relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">

@@ -31,7 +31,7 @@ export default function Testimonials() {
   const containerRef = useRef(null)
   
   return (
-    <section id="testimonialsSec" className="py-24 bg-primary-900 relative overflow-hidden text-white">
+    <section id="testimonialsSec" className="py-8 bg-primary-900 relative overflow-hidden text-white">
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-primary-800/50 blur-[100px]" />

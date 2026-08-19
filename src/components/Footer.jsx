@@ -1,7 +1,7 @@
 import React from 'react'
 import { Phone, Mail, MapPin, Globe, Users } from 'lucide-react'
 
-export default function Footer() {
+export default function Footer({ onViewChange }) {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
@@ -44,11 +44,28 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6">Legal & Resources</h4>
+            <h4 className="text-white font-bold mb-6">Portals & Resources</h4>
             <ul className="space-y-3">
+              <li>
+                <button 
+                  onClick={() => { onViewChange && onViewChange('partner'); window.scrollTo(0,0); }}
+                  className="hover:text-primary-400 transition-colors text-left"
+                >
+                  Partner Hub
+                </button>
+              </li>
+              <li>
+                <button 
+                  onClick={() => { onViewChange && onViewChange('gst'); window.scrollTo(0,0); }}
+                  className="hover:text-primary-400 transition-colors text-left"
+                >
+                  GST Helper
+                </button>
+              </li>
+              <li><a href="https://vfsoffice.vemurigroup.in/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Office Portal</a></li>
+              <li><a href="https://vfs.vemurigroup.in/" target="_blank" rel="noopener noreferrer" className="hover:text-primary-400 transition-colors">Client Login</a></li>
               <li><a href="#kyc" className="hover:text-primary-400 transition-colors">KYC Services</a></li>
               <li><a href="#compliance" className="hover:text-primary-400 transition-colors">Regulatory Disclosures</a></li>
-              {/* <li><a href="partner-info.html" className="hover:text-primary-400 transition-colors">Partner Info</a></li> */}
             </ul>
           </div>
 

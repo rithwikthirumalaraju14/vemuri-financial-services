@@ -17,7 +17,7 @@ export default function Calculators() {
   ]
 
   return (
-    <section id="sip" className="py-24 bg-white relative">
+    <section id="sip" className="py-8 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Header Section */}

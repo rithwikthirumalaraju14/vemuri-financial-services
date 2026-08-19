@@ -126,7 +126,7 @@ const solutions = [
 
 export default function Solutions() {
   return (
-    <section id="solutions" className="py-24 bg-white relative overflow-hidden">
+    <section id="solutions" className="py-8 bg-white relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-50 rounded-full blur-[100px] -mr-20 -mt-20 -z-10" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-50 rounded-full blur-[100px] -ml-20 -mb-20 -z-10" />

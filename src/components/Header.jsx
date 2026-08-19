@@ -57,7 +57,7 @@ export default function Header({ currentView, onViewChange }) {
           
           <a href="#" onClick={(e) => { e.preventDefault(); onViewChange('home'); window.scrollTo(0,0); }} className="flex items-center space-x-2">
             <img src="/vemurigroup_logo_registred.png" alt="Vemuri Financial Services Logo" className="h-10 w-auto" />
-            <span className="hidden sm:inline-block text-sm font-bold text-primary-600 ml-2">
+            <span className="hidden sm:inline-block text-lg font-bold text-primary-600 ml-2">
               Vemuri Financial Services
             </span>
           </a>
@@ -80,7 +80,7 @@ export default function Header({ currentView, onViewChange }) {
               {currentView === 'home' ? (
                 <div className="relative group hidden md:block">
                   <button className="inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-primary-600 bg-primary-50 hover:bg-primary-100 border border-primary-100 rounded-full transition-colors">
-                    Useful Portals
+                    Portals
                   </button>
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
                     <button 
