@@ -1,16 +1,64 @@
-# React + Vite
+# Vemuri Financial Services Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, high-performance, and fully responsive Single Page Application (SPA) built for **Vemuri Financial Services**. This website serves as the digital front door for clients, showcasing financial pillars, solutions, calculators, and regulatory compliance.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Typography**: Inter & Space Grotesk (Google Fonts)
 
-## React Compiler
+## 📦 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic SPA Routing**: Custom view handling without full page reloads.
+- **Floating Action Button**: Persistent WhatsApp integration for instant client communication.
+- **Interactive Calculators**: Built-in financial calculators (SIP, Step-up SIP, FD, SWP).
+- **Compliance Ready**: Dedicated sections displaying AMFI, IRDAI, PFRDA, and RBI disclosures.
+- **Dynamic Animations**: Scroll-linked animations and CSS-driven effects (e.g., logo shine).
+- **Responsive Design**: Mobile-first architecture ensuring perfect layouts across all devices.
 
-## Expanding the Oxlint configuration
+## 🛠️ Local Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository and navigate to the project directory:
+   ```bash
+   cd vemuri-website/my-react-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the local development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
+
+## 📁 Project Structure
+
+```text
+my-react-app/
+├── public/                  # Static assets (logos, images)
+├── src/
+│   ├── components/          # Reusable React components (Header, Hero, Footer, etc.)
+│   ├── App.jsx              # Main application entry point and state manager
+│   ├── main.jsx             # React DOM rendering
+│   └── index.css            # Global CSS, Tailwind directives, and custom keyframes
+├── package.json             # Project dependencies and scripts
+├── tailwind.config.js       # Tailwind CSS configuration
+└── vite.config.js           # Vite bundler configuration
+```
+
+## 🤝 Contributing
+Ensure that any new components are modular and utilize Tailwind CSS for styling to maintain design consistency. Always verify animations across both desktop and mobile viewports.

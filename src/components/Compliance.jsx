@@ -12,7 +12,7 @@ export default function Compliance() {
       content: (
         <>
           <p className="text-gray-600 mb-4 leading-relaxed">
-            Vemuri Financial Services is an <b>AMFI-registered Mutual Fund Distributor</b> (ARN-70362). We facilitate distribution only and do not provide investment advice or portfolio management services unless separately registered to do so.
+            Vemuri Financial Services is an <b>AMFI-registered Mutual Fund Distributor</b> (ARN-302882). We facilitate distribution only and do not provide investment advice or portfolio management services unless separately registered to do so.
           </p>
           <ul className="space-y-2 text-sm text-gray-500 mb-6">
             <li className="flex items-start">
@@ -21,11 +21,11 @@ export default function Compliance() {
             </li>
             <li className="flex items-start">
               <span className="mr-2 text-primary-400">•</span>
-              No assured or guaranteed returns are offered on any scheme.
+              In accordance with AMFI guidelines, we disclose that we earn incidental/trail commission from Asset Management Companies for distributing their mutual funds.
             </li>
             <li className="flex items-start">
               <span className="mr-2 text-primary-400">•</span>
-              Past performance is not indicative of future results.
+              No assured or guaranteed returns are offered on any scheme, and past performance is not indicative of future results.
             </li>
           </ul>
           <p className="text-sm text-gray-700 mb-6">

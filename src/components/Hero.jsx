@@ -14,7 +14,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative pt-28 pb-16 overflow-hidden bg-white">
+    <section id="home" className="relative pt-36 md:pt-40 pb-16 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100 rounded-full blur-[120px] -mr-40 -mt-20" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[120px] -ml-40 -mb-20" />

@@ -96,7 +96,7 @@ export default function Footer({ onViewChange }) {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Vemuri Financial Services. All rights reserved.</p>
-          <p className="mt-4 md:mt-0 text-xs">AMFI Registered Mutual Fund Distributor ARN-70362</p>
+          <p className="mt-4 md:mt-0 text-xs font-semibold text-gray-400">AMFI Registered Mutual Fund Distributor - ARN-302882</p>
         </div>
       </div>
     </footer>
