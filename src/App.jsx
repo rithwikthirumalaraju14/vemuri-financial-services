@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import PartnerHub from './components/PartnerHub'
 import GstHelper from './components/GstHelper'
 import ScrollToTop from './components/ScrollToTop'
+import VfsOfficeBenefits from './components/VfsOfficeBenefits'
 
 function App() {
   const [currentView, setCurrentView] = useState('home') // 'home', 'partner', or 'gst'
@@ -40,6 +41,11 @@ function App() {
           </>
         ) : currentView === 'partner' ? (
           <PartnerHub onNavigateHome={() => {
+            setCurrentView('home')
+            window.scrollTo(0, 0)
+          }} />
+        ) : currentView === 'vfs-benefits' ? (
+          <VfsOfficeBenefits onNavigateHome={() => {
             setCurrentView('home')
             window.scrollTo(0, 0)
           }} />

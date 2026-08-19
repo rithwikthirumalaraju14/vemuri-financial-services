@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}

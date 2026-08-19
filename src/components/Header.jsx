@@ -30,7 +30,7 @@ export default function Header({ currentView, onViewChange }) {
   const backgroundColor = useTransform(
     scrollY,
     [0, 50],
-    ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.9)']
+    ['rgba(255, 255, 255, 0)', 'rgba(255, 255, 255, 0.2)']
   )
 
   const handleNavClick = (e, href) => {
@@ -50,7 +50,7 @@ export default function Header({ currentView, onViewChange }) {
   return (
     <motion.header
       style={{ backgroundColor }}
-      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-gray-100"
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-gray-100/50"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="flex py-3 md:py-4 items-center justify-between">
@@ -102,21 +102,36 @@ export default function Header({ currentView, onViewChange }) {
                 </button>
               )}
 
-              <div className="hidden md:flex items-center p-1 bg-gray-50 border border-gray-100 rounded-full shadow-sm hover:shadow-md transition-shadow">
-                <a 
-                  href="https://vfsoffice.vemurigroup.in/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 text-xs font-bold text-gray-600 hover:text-primary-600 hover:bg-white rounded-full transition-all hover:shadow-sm"
-                >
-                  VFS Office 
-                </a>
-                <div className="w-px h-4 bg-gray-300 mx-1"></div>
+              <div className="hidden md:flex items-center space-x-2">
+                {/* VFS Office Dropdown */}
+                <div className="relative group">
+                  <button className="px-4 py-2.5 text-xs font-bold text-gray-600 bg-gray-50 border border-gray-100 hover:bg-white hover:text-primary-600 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-1">
+                    VFS Office
+                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                  </button>
+                  <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 flex flex-col p-1">
+                    <button 
+                      onClick={() => { onViewChange('vfs-benefits'); window.scrollTo(0,0); setIsOpen(false); }}
+                      className="px-4 py-2.5 text-left text-sm font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors"
+                    >
+                      Benefits & Utilization
+                    </button>
+                    <a 
+                      href="https://vfsoffice.vemurigroup.in/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-4 py-2.5 text-left text-sm font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-600 rounded-lg transition-colors"
+                    >
+                      Portal Login
+                    </a>
+                  </div>
+                </div>
+
                 <a 
                   href="https://vfs.vemurigroup.in/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="px-4 py-2 text-xs font-bold text-gray-600 hover:text-primary-600 hover:bg-white rounded-full transition-all hover:shadow-sm"
+                  className="px-4 py-2.5 text-xs font-bold text-gray-600 bg-gray-50 border border-gray-100 hover:text-primary-600 hover:bg-white rounded-full shadow-sm hover:shadow-md transition-all"
                 >
                   Client Login
                 </a>
@@ -169,15 +184,24 @@ export default function Header({ currentView, onViewChange }) {
                 Back to Main Website
               </button>
             )}
-            <a 
-              href="https://vfsoffice.vemurigroup.in/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary-700 bg-primary-50 hover:bg-primary-100 rounded-full mt-3"
-              onClick={() => setIsOpen(false)}
-            >
-              Office Portal
-            </a>
+            <div className="flex flex-col space-y-2 mt-4 bg-gray-50 p-4 rounded-2xl border border-gray-100">
+              <span className="text-xs font-bold tracking-widest text-gray-500 uppercase px-2 mb-1">VFS Office</span>
+              <button 
+                onClick={() => { onViewChange('vfs-benefits'); window.scrollTo(0, 0); setIsOpen(false); }}
+                className="text-left px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-xl"
+              >
+                Benefits & Utilization
+              </button>
+              <a 
+                href="https://vfsoffice.vemurigroup.in/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-left px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-xl"
+                onClick={() => setIsOpen(false)}
+              >
+                Portal Login
+              </a>
+            </div>
             <a 
               href="https://vfs.vemurigroup.in/" 
               target="_blank"
