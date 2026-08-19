@@ -1,0 +1,1373 @@
+[
+  {
+    "id": "loans",
+    "title": "Loans",
+    "tag": "Personal Loan \u2022 Home Loan \u2022 Loan Against Mutual Funds",
+    "cards": [
+      {
+        "title": "Personal Loan / Home Loan",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Open Portal",
+            "url": "https://tinyurl.com/vfsloans"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Voltmoney",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Partner Dashboard",
+            "url": "https://voltmoney.in/partner/dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Quicklend",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Partner Dashboard",
+            "url": "https://www.quicklend.in/partners/user/dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Yenmo",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Login",
+            "url": "https://partner.yenmo.in/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "NJ Capital",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com",
+          "Login: IFA00000649"
+        ],
+        "links": [
+          {
+            "label": "NJ Capital Login",
+            "url": "https://www.njcapital.in/partner/partner/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Mirae Asset",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Mirae Asset Login",
+            "url": "https://partner.miraeassetfin.com/"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds",
+    "title": "Mutual Funds",
+    "tag": "Distributor & partner portals",
+    "cards": [
+      {
+        "title": "MFU Online",
+        "meta": [
+          "Username: BRGHV302882",
+          "Mobile Apps:"
+        ],
+        "links": [
+          {
+            "label": "MFU\n                            Login",
+            "url": "https://www.mfuonline.com/"
+          },
+          {
+            "label": "VemuriFin BackOffice",
+            "url": "https://finbo.vemurigroup.in/"
+          },
+          {
+            "label": "Edge360",
+            "url": "https://edge360.camsonline.com/signin"
+          },
+          {
+            "label": "IRIS",
+            "url": "https://iris.kfintech.com/auth/login"
+          },
+          {
+            "label": "Cams FundsNet",
+            "url": "https://fundsnet.camsonline.com/ecrms/index.aspx"
+          },
+          {
+            "label": "\ud83e\udd16 MFU Android",
+            "url": "https://play.google.com/store/apps/details?id=com.intellect.mfu&hl=en_IN"
+          },
+          {
+            "label": "\ud83d\udcf1 MFU iOS",
+            "url": "https://apps.apple.com/in/app/gomf-by-mf-utilities/id1168654858"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Wylth CRM",
+        "meta": [
+          "Mobile Apps:"
+        ],
+        "links": [
+          {
+            "label": "CRM\n                            Login",
+            "url": "https://crm.wylth.com/"
+          },
+          {
+            "label": "VFS\n                            MF Login",
+            "url": "https://vfs.vemurigroup.in/"
+          },
+          {
+            "label": "\ud83e\udd16 VFS Android App",
+            "url": "https://play.google.com/store/apps/details?id=com.wylth.wylthinvestorapp&pcampaignid=web_share"
+          },
+          {
+            "label": "\ud83d\udcf1 VFS iOS App",
+            "url": "https://apps.apple.com/in/app/wylth/id6456452937"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Nirmal Bang",
+        "meta": [
+          "RM Name: Jaya",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Dashboard",
+            "url": "https://mflogin.nirmalbang.com/non-client-dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "NJ India",
+        "meta": [
+          "Username: 41968"
+        ],
+        "links": [
+          {
+            "label": "Partner Desk",
+            "url": "https://www.njindiaonline.in/pdesk/index.fin#"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Imperial Finvest",
+        "meta": [
+          "Username: 41968"
+        ],
+        "links": [
+          {
+            "label": "Imperial Login",
+            "url": "https://imperialfin.investwell.app/app/#/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "FundsIndia",
+        "meta": [
+          "Username: arn-302882@partner.fundsindia.com"
+        ],
+        "links": [
+          {
+            "label": "Partner Manual",
+            "url": "https://www.partner.fundsindia.com/ifa-onboarding/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "AssetPlus",
+        "meta": [
+          "Username: ARN-302882"
+        ],
+        "links": [
+          {
+            "label": "Login",
+            "url": "https://partner.assetplus.in/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Wealthy",
+        "meta": [
+          "Username: ARN-302882"
+        ],
+        "links": [
+          {
+            "label": "Partner Login",
+            "url": "https://www.wealthy.in/partner#login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "One Digital",
+        "meta": [
+          "Username: ARN-302882"
+        ],
+        "links": [
+          {
+            "label": "Login",
+            "url": "https://onedigital.centricity.co.in/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "ZFunds",
+        "meta": [
+          "Username: ARN-302882"
+        ],
+        "links": [
+          {
+            "label": "Login",
+            "url": "https://zfunds.in/dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Prudent Corporate",
+        "meta": [
+          "Username: ARN-302882"
+        ],
+        "links": [
+          {
+            "label": "Login",
+            "url": "https://www.prudentcorporate.com/login"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "insurance",
+    "title": "Insurance",
+    "tag": "Term \u2022 Health \u2022 General Insurance",
+    "cards": [
+      {
+        "title": "AxisMax Life",
+        "meta": [
+          "Username: 31453E"
+        ],
+        "links": [
+          {
+            "label": "mQuote",
+            "url": "https://pc.axismaxlife.com/products"
+          },
+          {
+            "label": "mPro",
+            "url": "https://mpro.axismaxlife.com/"
+          },
+          {
+            "label": "mPower",
+            "url": "https://mpower.axismaxlife.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Tata AIG",
+        "meta": [
+          "Username: imdasu@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Partner Login",
+            "url": "https://sellonline.tataaig.com/ipdsv2/login/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "PB Partners",
+        "meta": [
+          "Username: 9886291668"
+        ],
+        "links": [
+          {
+            "label": "Portal Login",
+            "url": "https://www.pbpartners.com/"
+          },
+          {
+            "label": "Partner Info",
+            "url": "https://www.pbpartners.com/v2/partner/vemurifinancialservi-bengaluru-1lYg#186"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "global-investments",
+    "title": "Global Investments",
+    "tag": "Gift City \u2022 International investing",
+    "cards": [
+      {
+        "title": "Samco Wealth Partners",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Dashboard",
+            "url": "https://partners.samcowealth.com/dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "DSP Gift City Distributor",
+        "meta": [],
+        "links": [
+          {
+            "label": "Distributor Dashboard",
+            "url": "https://giftcity.dspim.com/distributor/dashboard"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "commodity",
+    "title": "Commodity",
+    "tag": "Gold \u2022 Silver \u2022 Bonds",
+    "cards": [
+      {
+        "title": "Batuk Gold Partner",
+        "meta": [
+          "Partner Name: Sita Rama Ranganadha Ramanujadasu Vemuri",
+          "Partner Code: SRRRV461"
+        ],
+        "links": [
+          {
+            "label": "Partner Login",
+            "url": "https://partner.batuk.gold/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "NDX Finserv",
+        "meta": [
+          "RM Name: Relationship Manager",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit\n                            Portal",
+            "url": "https://ndxfinserv.com/"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "nps",
+    "title": "NPS",
+    "tag": "Pension & retirement planning",
+    "cards": [
+      {
+        "title": "NPS Login",
+        "meta": [],
+        "links": [
+          {
+            "label": "Open\n                            NPS Portal",
+            "url": "https://tinyurl.com/vfsnps"
+          },
+          {
+            "label": "Web Pension Login",
+            "url": "https://www.icicipension.in/login"
+          },
+          {
+            "label": "NPS\n                            Android App",
+            "url": "https://tinyurl.com/anpsapp"
+          },
+          {
+            "label": "PFRDA\n                            Portal",
+            "url": "https://www.pfrda.org.in/"
+          },
+          {
+            "label": "NPS iOS App",
+            "url": "https://tinyurl.com/inpsappi"
+          },
+          {
+            "label": "CAMSNPS\n                            Portal",
+            "url": "https://www.camsnps.in/"
+          },
+          {
+            "label": "NPS Login",
+            "url": "https://nps.kfintech.in/Login/Login"
+          },
+          {
+            "label": "NPS CRA Portal",
+            "url": "https://cra.nps-proteantech.in/CRA/"
+          },
+          {
+            "label": "NPS AtalPension Portal",
+            "url": "https://npslite-nsdl.com/CRAlite/"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "compliance",
+    "title": "Compliance & Regulatory Portals",
+    "tag": "AMFI \u2022 IRDAI \u2022 PFRDA \u2022 NPS \u2022 Loans \u2022 NSIM",
+    "cards": [
+      {
+        "title": "AMFI",
+        "meta": [],
+        "links": [
+          {
+            "label": "AMFI\n                            Portal",
+            "url": "https://www.amfiindia.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "IRDAI",
+        "meta": [],
+        "links": [
+          {
+            "label": "IRDAI\n                            Portal",
+            "url": "https://irdai.gov.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "PFRDA",
+        "meta": [],
+        "links": [
+          {
+            "label": "PFRDA\n                            Portal",
+            "url": "https://www.pfrda.org.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "NSIM",
+        "meta": [],
+        "links": [
+          {
+            "label": "NSIM\n                            Portal",
+            "url": "https://nsim.org.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Loan Compliance",
+        "meta": [],
+        "links": [
+          {
+            "label": "RBI\n                            Portal",
+            "url": "https://www.rbi.org.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Investor Grievance / Vigilance",
+        "meta": [],
+        "links": [
+          {
+            "label": "SEBI Grievance",
+            "url": "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognisedFpi=yes&intmId=13"
+          },
+          {
+            "label": "SEBI Vigilance",
+            "url": "https://www.sebi.gov.in/vigilance-app.html"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  },
+  {
+    "id": "templates",
+    "title": "Document & Success Templates",
+    "tag": "Use the placeholder [Customer Name] for quick customer messaging",
+    "cards": [
+      {
+        "title": "Mutual Fund Enquiry",
+        "meta": [],
+        "links": [],
+        "template": "**\ud83d\udccb Open a Mutual Fund Account \u2013 Required Documents**\n\nTo open your Mutual Fund account, please share the following:\n\n1. \ud83d\udcc4 PAN Card & Aadhaar Card copies\n2. \ud83d\udce7 Email ID & \ud83d\udcf1 Mobile Number\n3. \ud83c\udfe6 Any one of the following:\n   * Cancelled Cheque, or\n   * Last 3 months' Bank Statement (showing Account Number), or\n   * Bank Passbook (First Page + Last 3 months' entries)\n4. \ud83c\udf0d Place of Birth (City, State & Country)\n5. \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67 Nominee Details:\n   * PAN Card or Aadhaar Card\n   * Email ID\n   * Mobile Number\n\nOnce I receive the above, I'll complete your account opening process.\n\n**Vemuri Financial Services**\n*Simple. Smart. Secure Finance.*\n\n\ud83d\udcde 9886291668\n\ud83d\udce7 [vemurifin@gmail.com](mailto:vemurifin@gmail.com)\n\ud83c\udf10 https://fin.vemurigroup.in"
+      },
+      {
+        "title": "Term Insurance Enquiry",
+        "meta": [],
+        "links": [],
+        "template": "**\ud83d\udccb Term Insurance Quote \u2013 Required Details**\nTo provide you with the most suitable **Term Insurance** quote, please share the following details:\n\n* \ud83d\udc64 Full Name:\n* \ud83d\udebb Gender:\n* \ud83c\udf82 Date of Birth:\n* \ud83d\udcbc Occupation:\n* \ud83d\udcb0 Gross Annual Income:\n* \ud83d\udccd PIN Code:\n* \ud83c\udf93 Highest Qualification:\n* \ud83d\udcc5 Policy Term:\n* \ud83d\udcb3 Premium Payment Term:\n* \ud83d\udead Smoker (Yes/No):\n* \ud83d\udee1\ufe0f Required Sum Assured:\n* \ud83d\udcc4 Existing Life Insurance Details (if any):\n\nOnce I receive the above information, I'll compare plans and recommend the best option based on your needs.\n**Vemuri Financial Services**\n*Simple. Smart. Secure Finance.*\n\n\ud83d\udcde 9886291668\n\ud83d\udce7 [vemurifin@gmail.com](mailto:vemurifin@gmail.com)\n\ud83c\udf10 https://fin.vemurigroup.in"
+      },
+      {
+        "title": "Health Insurance Enquiry",
+        "meta": [],
+        "links": [],
+        "template": "**\ud83d\udccb Health Insurance Quote \u2013 Required Details**\nPlease share the following details:\n* \ud83d\udc64 Name\n* \ud83c\udf82 Date of Birth\n* \ud83d\udccf Height & Weight\n* \ud83d\udce7 Email ID\n* \ud83d\udcf1 Mobile Number\n* \ud83c\udd94 PAN Number\n* \ud83c\udfe0 Address & PIN Code\n* \ud83d\udcbc Occupation & Annual Income\n* \ud83d\udc8d Marital Status\n* \ud83c\udfe5 Existing Illnesses / Medications / Surgeries (if any)\n* \ud83d\udee1\ufe0f Required Sum Assured & Policy Term\n* \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67 Nominee Name, DOB & Relationship\nThank you! Once I receive the details, I'll recommend the best health insurance plan for you.\n\n**Vemuri Financial Services**\n\ud83d\udcde 9886291668 | \ud83c\udf10 https://fin.vemurigroup.in"
+      },
+      {
+        "title": "Mutual Fund Success",
+        "meta": [],
+        "links": [],
+        "template": "\ud83c\udf1f **Welcome to Your Financial Planning Journey!**\nYour investment account has been created successfully.\n\n\ud83d\udcf1 **App:** https://tinyurl.com/vemuriapp\n\ud83c\udf10 **Portal:** https://tinyurl.com/vemurimf\n\n\ud83d\udd10 **Login Credentials**\n\ud83d\udc64 Username: **PAN Number**\n\ud83d\udd11 Password: **Welcome@123**\n\nI'm here to help you with:\n\u2705 Mutual Funds & SIPs\n\u2705 Portfolio Review\n\u2705 Financial Planning\n\n**Insurance | Mutual Funds | NPS | Tax Saving | Retirement | Loans**\nThank you for choosing **Vemuri Financial Services**.\n\n\ud83d\udcde 9886291668\n\ud83d\udce7 [vemurifin@gmail.com](mailto:vemurifin@gmail.com)\n\ud83c\udf10 https://fin.vemurigroup.in"
+      },
+      {
+        "title": "Term Insurance Success",
+        "meta": [],
+        "links": [],
+        "template": "\u2705 Your **Axis Max Life Term Insurance** application has been successfully submitted.\n\nPlease log in to review your policy and update your personal & nominee details.\n\n\ud83c\udf10 **Web:** https://www.axismaxlife.com/cs/login\n\ud83d\udcf1 **App:** https://tinyurl.com/axismaxapp\n\nThank you for choosing **Vemuri Financial Services**. If you're happy with my service, kindly refer your friends and family.\n\n**Vemuri Financial Services**\n*Simple. Smart. Secure Finance.*\nInsurance | Mutual Funds | NPS | Tax Saving | Retirement | Home & Personal Loans\n\n\ud83d\udcde 9886291668\n\ud83d\udce7 [vemurifin@gmail.com](mailto:vemurifin@gmail.com)\n\ud83c\udf10 https://fin.vemurigroup.in"
+      },
+      {
+        "title": "Health Insurance Success",
+        "meta": [],
+        "links": [],
+        "template": "\u2705 Your Health Insurance application has been successfully submitted.\n\nYou will receive updates from the insurer shortly. If any additional documents are required, I'll assist you throughout the process.\n\nThank you for choosing Vemuri Financial Services.\n\nInsurance | Mutual Funds | NPS | Tax Saving | Retirement | Home & Personal Loans\n\n\ud83d\udcde 9886291668\n\ud83d\udce7 vemurifin@gmail.com\n\ud83c\udf10 https://fin.vemurigroup.in"
+      }
+    ]
+  },
+  {
+    "id": "amcSection",
+    "title": "AMCs",
+    "tag": "RM contact details for mutual fund partners",
+    "cards": [
+      {
+        "title": "HDFC Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.hdfcfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "SBI Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.sbimf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "ICICI Prudential AMC",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.icicipruamc.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Nippon India AMC",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.nipponindiaim.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Axis Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.axismf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Kotak Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.kotakmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Aditya Birla Sun Life AMC",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://abslmfpartner.abslamc.com/ifa/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "UTI Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.utimf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "DSP Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.dspim.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Tata Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.tatamutualfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Mirae Asset Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.miraeassetmf.co.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Franklin Templeton",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.franklintempletonindia.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Canara Robeco Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.canararobeco.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "HSBC Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.assetmanagement.hsbc.co.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "IDBI Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.idbimutual.co.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Invesco Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.invescomutualfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "LIC Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.licmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Mahindra Manulife Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.mahindramanulife.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Motilal Oswal Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.motilaloswalmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "PPFAS Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.ppfas.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Quant Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.quantmutual.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Union Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.unionmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Sundaram Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.sundarammutual.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Baroda BNP Paribas Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.barodabnpparibasmf.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Edelweiss Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.edelweissmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "IDFC FIRST Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.idfcfirstmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Bank Of India Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.bankofindiamutualfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Shriram Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.shrirammf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Bandhan Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.bandhanmutual.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Groww Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://groww.in/mutual-funds"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Zerodha Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://zerodhafundhouse.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Navi Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.navimutualfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Samco Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://partners.samcomf.com/login"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "JM Financial Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.jmfinancialmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "JIO Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.jiofinance.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "ITI Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.itimutualfund.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Quantum Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.quantumamc.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Trust Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.trustmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "WhiteOak Capital Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.whiteoakamc.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "PGIM India Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.pgimindiamf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Bajaj Finserv Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.bajajfinserv.in/finance/mutual-funds"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Helios Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.heliosmf.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Nuvama Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.nuvamawealth.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "360 ONE Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://edge360.camsonline.com/signin"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "PPFAS Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://partners.ppfas.com/dashboard"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "AlphaGrep Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.alphagrep.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Sundaram Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.sundarammutual.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "WhiteOak Capital AMC",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.whiteoakamc.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Monarch Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: Amc.compliance@monarchamc.in"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://monarchamc.in/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "ASK Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: compliance@askmutualfund.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://askmutualfund.com"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "Lakshya Asset Management",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://lakshyafunds.com/"
+          }
+        ],
+        "template": ""
+      },
+      {
+        "title": "NJ Mutual Fund",
+        "meta": [
+          "RM Name: Vemuri Financial Services Team",
+          "RM Number: +91 98862 91668",
+          "RM Email: vemurifin@gmail.com"
+        ],
+        "links": [
+          {
+            "label": "Visit Portal",
+            "url": "https://www.njindiaonline.in/"
+          }
+        ],
+        "template": ""
+      }
+    ]
+  }
+]

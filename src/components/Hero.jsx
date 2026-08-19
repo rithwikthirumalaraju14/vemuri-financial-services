@@ -14,13 +14,13 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+    <section id="home" className="relative pt-28 pb-16 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100 rounded-full blur-[120px] -mr-40 -mt-20" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[120px] -ml-40 -mb-20" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 py-16 w-full">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -29,7 +29,13 @@ export default function Hero() {
             className="flex flex-col space-y-8"
           >
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-600 text-sm font-medium w-fit min-h-[32px]">
-              <Sparkles className="h-4 w-4 flex-shrink-0" />
+              <motion.div
+                animate={{ rotate: isExpanded ? 360 : 0 }}
+                transition={{ duration: 1, ease: "easeInOut" }}
+                className="flex items-center justify-center flex-shrink-0"
+              >
+                <Sparkles className="h-4 w-4" />
+              </motion.div>
               <motion.div
                 initial={{ width: "auto", opacity: 1 }}
                 animate={{

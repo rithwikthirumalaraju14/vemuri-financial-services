@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react'
 import { motion, useAnimation, useInView } from 'framer-motion'
-import { Quote } from 'lucide-react'
+import { Quote, ExternalLink } from 'lucide-react'
 
 export default function Testimonials() {
   const testimonialsData = [
@@ -25,6 +25,8 @@ export default function Testimonials() {
       author: "Mamidipaka Sateeshkumar"
     }
   ]
+
+  const googleReviewLink = "https://www.google.com/search?client=ms-android-vivo-terr1-rso2&hs=R8Sq&sca_esv=4d319e267d2ecc05&cs=0&hl=en-US&output=search&kgmid=/g/11b8_sbz2f&q=Vemuri+Espousal+Pvt+Ltd+-+GST,+Income+tax,+LLP+and+Company+MCA+filing&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/act/m1/4&kgs=c84809916f9c5c90&utm_source=epsd1,ltae,rimspwouoe,sh/x/loc/act/m1/4#lrd=0x3bae13ca52588c65:0xed20da49da05d29,1,,,,"
 
   const containerRef = useRef(null)
   
@@ -83,6 +85,24 @@ export default function Testimonials() {
             ))}
           </motion.div>
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-12 flex justify-center"
+        >
+          <a
+            href={googleReviewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-white text-primary-900 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl hover:shadow-2xl hover:-translate-y-0.5 duration-200"
+          >
+            Read more reviews on Google
+            <ExternalLink className="ml-2 w-5 h-5" />
+          </a>
+        </motion.div>
         
       </div>
       
