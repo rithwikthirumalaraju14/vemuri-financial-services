@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-export default function Sip() {
-  const [mode, setMode] = useState('sip') // 'sip' or 'lumpsum'
+export default function Sip({ mode = 'sip' }) {
   const [investment, setInvestment] = useState(10000)
   const [lumpsum, setLumpsum] = useState(100000)
   const [rate, setRate] = useState(12)
@@ -39,30 +38,8 @@ export default function Sip() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-5 lg:p-6 border border-gray-100 max-w-4xl mx-auto my-2">
-      {/* SIP / Lumpsum Toggle */}
+      {/* Calculator Header */}
       <div className="mb-3">
-        <div className="inline-flex bg-gray-100 rounded-xl p-1 mb-3">
-          <button
-            onClick={() => setMode('sip')}
-            className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 ${
-              mode === 'sip'
-                ? 'bg-primary-500 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-900'
-            }`}
-          >
-            SIP
-          </button>
-          <button
-            onClick={() => setMode('lumpsum')}
-            className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 ${
-              mode === 'lumpsum'
-                ? 'bg-primary-500 text-white shadow-md'
-                : 'text-gray-600 hover:text-gray-900'
-            }`}
-          >
-            Lumpsum
-          </button>
-        </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-1">
           {mode === 'sip' ? 'SIP Calculator' : 'Lumpsum Calculator'}
         </h3>

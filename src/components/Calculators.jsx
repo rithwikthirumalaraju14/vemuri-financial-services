@@ -32,13 +32,9 @@ export default function Calculators() {
   ]
 
   const handleCalcClick = (id) => {
-    // Map sidebar clicks to actual calculator tabs
-    if (id === 'lumpsum') {
-      setActiveTab('sip') // Lumpsum is inside SIP component
-    } else if (['sip', 'swp', 'fd', 'inflation'].includes(id)) {
+    if (['sip', 'lumpsum', 'swp', 'fd', 'inflation'].includes(id)) {
       setActiveTab(id)
     }
-    // For other calculators we just highlight them (they don't have full components yet)
   }
 
   return (
@@ -46,7 +42,7 @@ export default function Calculators() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-6 space-y-3">
+        <div className="text-center max-w-3xl mx-auto mb-4 space-y-2">
           <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary-500">
             Planning Tools
           </h2>
@@ -58,7 +54,6 @@ export default function Calculators() {
           </p>
         </div>
 
-
         {/* Main Content: Calculator + Sidebar */}
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Calculator Area */}
@@ -69,7 +64,7 @@ export default function Calculators() {
             transition={{ duration: 0.4 }}
             className="flex-1 min-w-0"
           >
-            {activeTab === 'sip' && <Sip />}
+            {(activeTab === 'sip' || activeTab === 'lumpsum') && <Sip mode={activeTab} />}
             {activeTab === 'swp' && <Swp />}
             {activeTab === 'fd' && <Fd />}
             {activeTab === 'inflation' && <Inflation />}
