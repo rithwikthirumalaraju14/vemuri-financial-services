@@ -14,7 +14,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative pt-36 md:pt-40 pb-16 overflow-hidden bg-white">
+    <section id="home" className="relative pt-28 md:pt-32 pb-16 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100 rounded-full blur-[120px] -mr-40 -mt-20" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[120px] -ml-40 -mb-20" />
@@ -107,7 +107,7 @@ export default function Hero() {
           >
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-white/20 glass p-8">
               <h3 className="text-2xl font-bold mb-6 text-gray-900">Your Financial Shield & Engine</h3>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
@@ -139,7 +139,7 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8 pt-6 border-t border-gray-100">
                 <p className="text-sm text-gray-600 italic">"Sequence matters: secure the downside first, then scale investments."</p>
               </div>

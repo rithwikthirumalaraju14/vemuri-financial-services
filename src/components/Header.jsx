@@ -98,8 +98,8 @@ export default function Header({ currentView, onViewChange }) {
             </div>
           </a>
 
-          <div className="flex items-center md:space-x-6 lg:space-x-8">
-            <nav className="hidden lg:flex items-center space-x-6">
+          <div className="flex items-center md:space-x-3 lg:space-x-4">
+            <nav className="hidden lg:flex items-center space-x-5 lg:space-x-6">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -113,19 +113,12 @@ export default function Header({ currentView, onViewChange }) {
             </nav>
 
             <div className="flex items-center space-x-3 lg:space-x-4">
-              {currentView !== 'home' && (
-                <button 
-                  onClick={() => { onViewChange('home'); window.scrollTo(0,0); setIsOpen(false); }}
-                  className="hidden md:inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold text-primary-600 bg-primary-50 hover:bg-primary-100 border border-primary-100 rounded-full transition-colors"
-                >
-                  Main Website
-                </button>
-              )}
+              {/* Main Website button removed from header as requested */}
 
               <div className="hidden md:flex items-center space-x-2">
                 {/* VFS Office Dropdown */}
                 <div className="relative group">
-                  <button className="px-4 py-2.5 text-xs font-bold text-gray-600 bg-gray-50 border border-gray-100 hover:bg-white hover:text-primary-600 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-1">
+                  <button className={`font-bold text-gray-600 bg-gray-50 border border-gray-100 hover:bg-white hover:text-primary-600 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-1 ${currentView === 'vfs-benefits' ? 'px-3 py-2 text-[11px]' : 'px-4 py-2.5 text-xs'}`}>
                     {currentView === 'vfs-benefits' ? 'Distributor Backoffice' : 'VFS Office'}
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </button>

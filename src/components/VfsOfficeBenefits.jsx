@@ -58,7 +58,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
   const [openFaq, setOpenFaq] = useState(null)
 
   return (
-    <div className="pt-24 pb-16 min-h-screen bg-gray-50">
+    <div className="pt-28 md:pt-32 pb-16 min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center relative z-10">

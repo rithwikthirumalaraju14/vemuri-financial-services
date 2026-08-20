@@ -27,7 +27,7 @@ export default function PartnerHub({ onNavigateHome }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-24 pb-20">
+    <div className="min-h-screen bg-gray-50 pt-28 md:pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         {/* Header Section */}

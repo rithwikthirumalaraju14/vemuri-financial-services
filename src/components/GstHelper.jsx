@@ -257,7 +257,7 @@ export default function GstHelper({ onNavigateHome }) {
   }
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-gray-50 flex flex-col items-center">
+    <div className="pt-28 md:pt-32 pb-20 min-h-screen bg-gray-50 flex flex-col items-center">
       <div className="max-w-3xl w-full px-4 mb-6">
         <button 
           onClick={onNavigateHome}
