@@ -3,10 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircle, Shield, Monitor, FileSpreadsheet, Calculator, Briefcase, ChevronRight, BarChart, Search, Building2, ChevronDown, Check, Minus } from 'lucide-react'
 
 export default function VfsOfficeBenefits({ onNavigateHome }) {
+  React.useEffect(() => {
+    const originalTitle = document.title
+    document.title = "VFS Office – Distributor Backoffice"
+    return () => {
+      document.title = originalTitle
+    }
+  }, [])
+
   const plans = [
-    { name: 'Basic', price: '₹0', term: 'forever', features: ['20 of 30 tools', '1 user', '200MB storage', '50 credits/mo'] },
-    { name: 'Medium', price: '₹50', term: '/month', features: ['25 of 30 tools', '5 users', '1GB storage', '500 credits/mo'], popular: true },
-    { name: 'Advanced', price: '₹100', term: '/month', features: ['29 of 30 tools', 'Unlimited users', 'Unlimited credits'] },
+    { name: 'Basic', price: '₹0', term: 'forever', features: ['20 of 30 tools', , '200MB storage', '50 credits/mo'] },
+    { name: 'Medium', price: '₹50', term: '/month', features: ['25 of 30 tools', , '1GB storage', '500 credits/mo'] },
+    { name: 'Advanced', price: '₹100', term: '/month', features: ['29 of 30 tools', 'Unlimited users', 'Unlimited credits'], popular: true },
     { name: 'Enterprise', price: '₹1,999', term: '/year', features: ['All 30 tools', 'My Business Profile included', 'Priority Support'] }
   ]
 
@@ -54,14 +62,14 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 text-white py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-yellow-500/30 text-yellow-500 text-sm font-bold tracking-widest uppercase mb-8"
           >
             Vemuri Financial Services · Distributor Backoffice
           </motion.div>
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -69,7 +77,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
           >
             Everything your MFD business does on paper, <span className="text-yellow-500">done in minutes online.</span>
           </motion.h1>
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -77,23 +85,23 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
           >
             One login for GST commission invoicing, client calculators, AMC information, reports, and your own business profile — built specifically for Indian Mutual Fund Distributors, from your first day to your busiest month-end.
           </motion.p>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <a 
-              href="https://vfsoffice.vemurigroup.in/request-access.php" 
-              target="_blank" 
+            <a
+              href="https://vfsoffice.vemurigroup.in/request-access.php"
+              target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-yellow-500 text-slate-900 font-bold rounded-xl hover:bg-yellow-400 transition-colors w-full sm:w-auto"
             >
               Try Free — Get Started on Basic
             </a>
-            <a 
-              href="https://vfsoffice.vemurigroup.in/" 
-              target="_blank" 
+            <a
+              href="https://vfsoffice.vemurigroup.in/"
+              target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white/10 text-white border border-white/20 font-bold rounded-xl hover:bg-white/20 transition-colors w-full sm:w-auto inline-flex justify-center items-center gap-2"
             >
@@ -176,16 +184,16 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">GST & Commission Invoicing</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">A whole month of GST paperwork, guided step by step. Download your commission reports, digitally sign every PDF with your saved signatory, auto-map the matching Excel, verify invoice numbers, and generate GST-ready reports.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Cuts a 3–4 hour monthly task down to about 20–30 minutes</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">One click fetches, signs, and files a whole folder</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">All processing happens in your own browser — nothing uploaded</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Cuts a 3–4 hour monthly task down to about 20–30 minutes</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">One click fetches, signs, and files a whole folder</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">All processing happens in your own browser — nothing uploaded</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8">
                 <div className="text-xs font-mono text-gray-400 mb-4 uppercase tracking-wider">Step 3 of 8</div>
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 text-gray-400"><CheckCircle className="w-5 h-5 text-teal-500"/> Download CAMS / KFin reports</div>
-                  <div className="flex items-center gap-3 text-gray-400"><CheckCircle className="w-5 h-5 text-teal-500"/> Sign commission PDFs</div>
+                  <div className="flex items-center gap-3 text-gray-400"><CheckCircle className="w-5 h-5 text-teal-500" /> Download CAMS / KFin reports</div>
+                  <div className="flex items-center gap-3 text-gray-400"><CheckCircle className="w-5 h-5 text-teal-500" /> Sign commission PDFs</div>
                   <div className="flex items-center gap-3 font-bold text-primary-600"><span className="w-5 h-5 border-2 border-primary-600 rounded-full flex items-center justify-center text-[10px]">3</span> Map Excel & verify invoices</div>
                   <div className="flex items-center gap-3 text-gray-300"><div className="w-5 h-5 border-2 border-gray-200 rounded-full" /> Generate GST-ready reports</div>
                 </div>
@@ -201,21 +209,21 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">My Business Profile</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">Every report leaves with your name on it, not just the company's. Set your own business name, logo, tagline, contact details, and regulatory numbers once. Every report generated carries your identity.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">One flag switches your own branding on or off</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Perfect for sub-distributors and franchisees</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Bundled at no extra cost into the Enterprise plan</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">One flag switches your own branding on or off</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Perfect for sub-distributors and franchisees</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Bundled at no extra cost into the Enterprise plan</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8 flex items-center justify-center">
-                 <div className="text-center">
-                    <div className="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">LOGO</div>
-                    <div className="h-4 bg-gray-200 w-32 mx-auto rounded mb-2"></div>
-                    <div className="h-3 bg-gray-100 w-48 mx-auto rounded mb-6"></div>
-                    <div className="flex justify-center gap-2">
-                      <span className="px-3 py-1 bg-gray-50 text-xs rounded border text-gray-500">ARN-XXXX</span>
-                      <span className="px-3 py-1 bg-gray-50 text-xs rounded border text-gray-500">GSTIN-XXXX</span>
-                    </div>
-                 </div>
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">LOGO</div>
+                  <div className="h-4 bg-gray-200 w-32 mx-auto rounded mb-2"></div>
+                  <div className="h-3 bg-gray-100 w-48 mx-auto rounded mb-6"></div>
+                  <div className="flex justify-center gap-2">
+                    <span className="px-3 py-1 bg-gray-50 text-xs rounded border text-gray-500">ARN-XXXX</span>
+                    <span className="px-3 py-1 bg-gray-50 text-xs rounded border text-gray-500">GSTIN-XXXX</span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -228,22 +236,22 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">22 Client Calculators</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">Every client conversation, backed by a printable projection. SIP, SWP, Lumpsum, Retirement, Loan EMI, and more — 22 calculators producing year-by-year tables, charts, and reports.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Turns a client meeting into a professional, printed take-away</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Dedicated NPS calculator covers allocation & annuity breakdowns</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Included free on every plan, from Basic upward</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Turns a client meeting into a professional, printed take-away</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Dedicated NPS calculator covers allocation & annuity breakdowns</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Included free on every plan, from Basic upward</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8">
-                 <div className="flex items-end justify-between gap-2 h-32 mb-6 px-4">
-                   {[40, 60, 50, 80, 70, 100, 90, 120].map((h, i) => (
-                     <div key={i} className="w-full bg-primary-200 rounded-t-sm" style={{height: `${h}%`}}></div>
-                   ))}
-                 </div>
-                 <div className="flex justify-between text-xs text-gray-400 font-medium px-4">
-                   <span>Chart</span>
-                   <span>Table</span>
-                   <span>Share/Print</span>
-                 </div>
+                <div className="flex items-end justify-between gap-2 h-32 mb-6 px-4">
+                  {[40, 60, 50, 80, 70, 100, 90, 120].map((h, i) => (
+                    <div key={i} className="w-full bg-primary-200 rounded-t-sm" style={{ height: `${h}%` }}></div>
+                  ))}
+                </div>
+                <div className="flex justify-between text-xs text-gray-400 font-medium px-4">
+                  <span>Chart</span>
+                  <span>Table</span>
+                  <span>Share/Print</span>
+                </div>
               </div>
             </div>
 
@@ -256,9 +264,9 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Reports Center</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">See the whole business without asking anyone for a spreadsheet. Subscription activity, payments, module usage, support performance — pulled straight from what the app has recorded.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Answers "what happened this month" in one screen</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Support performance includes CSAT and ticket resolution time</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Every figure traces back to the app's own real activity log</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Answers "what happened this month" in one screen</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Support performance includes CSAT and ticket resolution time</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Every figure traces back to the app's own real activity log</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8">
@@ -288,8 +296,8 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Search</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">One box that searches the whole app at once. Type a question and get results from modules, documentation, workflows, AMCs, FAQs, and reports — instead of hunting through menus.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Works instantly, no setup, included on every plan</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Can optionally answer in natural language once AI is enabled</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Works instantly, no setup, included on every plan</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Can optionally answer in natural language once AI is enabled</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8">
@@ -314,8 +322,8 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">AMC Directory</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">Every AMC's login link and speciality, already looked up. A built-in, always-current directory of Indian AMCs with empanelment status and direct login links.</p>
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">No more hunting across bookmarks for the right AMC login</span></li>
-                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5"/> <span className="text-gray-700">Includes which AMCs accept US/Canada-resident investors</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">No more hunting across bookmarks for the right AMC login</span></li>
+                  <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-teal-500 flex-shrink-0 mt-0.5" /> <span className="text-gray-700">Includes which AMCs accept US/Canada-resident investors</span></li>
                 </ul>
               </div>
               <div className="flex-1 w-full bg-white rounded-3xl shadow-xl border border-gray-100 p-8">
@@ -352,7 +360,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">30 tools, organized the way your business thinks.</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">The complete set of tools, grouped by what they're for.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {allTools.map((cat, idx) => (
               <div key={idx} className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
@@ -381,7 +389,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
             <h2 className="text-3xl md:text-4xl font-black mb-4">Start free. Upgrade only when you need to.</h2>
             <p className="text-slate-300">Every plan includes the 30-day full-access trial first — this is what each one costs and unlocks after that.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {plans.map((plan, idx) => (
               <div key={idx} className={`rounded-3xl p-8 border ${plan.popular ? 'bg-primary-600 border-primary-500 relative shadow-2xl scale-105 z-10' : 'bg-slate-800 border-slate-700'}`}>
@@ -463,13 +471,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
                     <td className="p-4 md:p-6 text-center text-sm text-slate-400">Add-on</td>
                     <td className="p-4 md:p-6 text-center text-sm text-yellow-400 font-bold">✓ Included</td>
                   </tr>
-                  <tr className="hover:bg-slate-700/30 transition-colors">
-                    <td className="p-4 md:p-6 text-sm text-slate-300">Users on one account</td>
-                    <td className="p-4 md:p-6 text-center text-sm">1</td>
-                    <td className="p-4 md:p-6 text-center text-sm">5</td>
-                    <td className="p-4 md:p-6 text-center text-sm">Unlimited</td>
-                    <td className="p-4 md:p-6 text-center text-sm">Unlimited</td>
-                  </tr>
+
                   <tr className="hover:bg-slate-700/30 transition-colors">
                     <td className="p-4 md:p-6 text-sm text-slate-300 border-b-0">Monthly credits</td>
                     <td className="p-4 md:p-6 text-center text-sm border-b-0">50</td>
@@ -481,11 +483,11 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
               </table>
             </div>
           </div>
-          
+
           <div className="mt-16 text-center">
-            <a 
-              href="https://vfsoffice.vemurigroup.in/request-access.php" 
-              target="_blank" 
+            <a
+              href="https://vfsoffice.vemurigroup.in/request-access.php"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex px-8 py-4 bg-yellow-500 text-slate-900 font-bold rounded-xl hover:bg-yellow-400 transition-colors"
             >
@@ -505,11 +507,11 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
             </div>
             <h2 className="text-3xl font-black text-gray-900 mb-4">No jargon. Just what you'd actually want to know.</h2>
           </div>
-          
+
           <div className="space-y-4">
             {faqs.map((faq, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
-                <button 
+                <button
                   className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
@@ -537,7 +539,7 @@ export default function VfsOfficeBenefits({ onNavigateHome }) {
       </section>
 
       <div className="text-center py-12 bg-white border-t border-gray-100">
-        <button 
+        <button
           onClick={onNavigateHome}
           className="text-primary-600 font-semibold hover:text-primary-700 underline"
         >

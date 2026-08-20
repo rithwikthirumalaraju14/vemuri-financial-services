@@ -18,8 +18,32 @@ import ScrollToTop from './components/ScrollToTop'
 import VfsOfficeBenefits from './components/VfsOfficeBenefits'
 
 function App() {
-  const [currentView, setCurrentView] = useState('home') // 'home', 'partner', or 'gst'
+  const [currentView, setCurrentView] = useState(() => {
+    const params = new URLSearchParams(window.location.search)
+    return params.get('view') || 'home'
+  })
 
+  React.useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search)
+      setCurrentView(params.get('view') || 'home')
+    }
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
+  React.useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (currentView === 'home') {
+      if (params.has('view')) {
+        window.history.pushState({}, '', window.location.pathname)
+      }
+    } else {
+      if (params.get('view') !== currentView) {
+        window.history.pushState({}, '', `?view=${currentView}`)
+      }
+    }
+  }, [currentView])
   return (
     <div className="bg-white min-h-screen text-gray-900 font-sans selection:bg-primary-500 selection:text-white flex flex-col">
       <Header currentView={currentView} onViewChange={setCurrentView} />
@@ -57,7 +81,7 @@ function App() {
         )}
       </main>
       
-      {currentView === 'home' && <Footer onViewChange={setCurrentView} />}
+      <Footer onViewChange={setCurrentView} />
       
       <ScrollToTop />
       

@@ -35,12 +35,32 @@ export default function Header({ currentView, onViewChange }) {
 
   const handleNavClick = (e, href) => {
     setIsOpen(false)
+    if (href === '#') {
+      e.preventDefault()
+      if (currentView !== 'home') {
+        onViewChange('home')
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
     if (href.startsWith('#')) {
-      const el = document.querySelector(href)
-      if (el) {
-        e.preventDefault()
-        const y = el.getBoundingClientRect().top + window.scrollY - 160
-        window.scrollTo({ top: y, behavior: 'smooth' })
+      e.preventDefault()
+      if (currentView !== 'home' && currentView !== 'partner') {
+        onViewChange('home')
+        setTimeout(() => {
+          const el = document.querySelector(href)
+          if (el) {
+            const y = el.getBoundingClientRect().top + window.scrollY - 100
+            window.scrollTo({ top: y, behavior: 'smooth' })
+          }
+        }, 150)
+      } else {
+        const el = document.querySelector(href)
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.scrollY - 100
+          window.scrollTo({ top: y, behavior: 'smooth' })
+        }
       }
     }
   }
@@ -58,7 +78,7 @@ export default function Header({ currentView, onViewChange }) {
           <a href="#" onClick={(e) => { e.preventDefault(); onViewChange('home'); window.scrollTo(0,0); }} className="flex items-center space-x-3 md:space-x-4">
             <div className="shine-wrapper rounded-xl flex-shrink-0">
               <img 
-                src="/vemurifin.jpg.png" 
+                src="/vemurifinance_logo.png" 
                 alt="Vemuri Financial Services Logo" 
                 className="h-16 md:h-24 w-auto object-contain block" 
                 onError={(e) => e.target.style.display = 'none'} 
@@ -139,6 +159,7 @@ export default function Header({ currentView, onViewChange }) {
               
               <a 
                 href="#contact"
+                onClick={(e) => handleNavClick(e, '#contact')}
                 className={`hidden md:inline-flex items-center justify-center px-4 lg:px-6 py-2.5 text-sm font-semibold text-white bg-primary-500 hover:bg-primary-600 rounded-full transition-colors shadow-lg shadow-primary-500/30 ${currentView === 'partner' ? 'hidden' : ''}`}
               >
                 Get Advice

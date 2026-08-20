@@ -4,13 +4,26 @@ import { ArrowLeft, ExternalLink, Copy, Check, Users } from 'lucide-react'
 import partnerData from '../data/partnerData.json'
 
 export default function PartnerHub({ onNavigateHome }) {
+  React.useEffect(() => {
+    const originalTitle = document.title
+    document.title = "VFS Partner Hub"
+    return () => {
+      document.title = originalTitle
+    }
+  }, [])
+
   const [showRM, setShowRM] = useState(false)
   const [copiedId, setCopiedId] = useState(null)
+  const [editedTemplates, setEditedTemplates] = useState({})
 
   const handleCopy = (text, id) => {
     navigator.clipboard.writeText(text)
     setCopiedId(id)
     setTimeout(() => setCopiedId(null), 2000)
+  }
+
+  const handleTemplateChange = (id, value) => {
+    setEditedTemplates(prev => ({ ...prev, [id]: value }))
   }
 
   return (
@@ -111,13 +124,13 @@ export default function PartnerHub({ onNavigateHome }) {
                       {isTemplate && card.template && (
                         <div className="mb-6 flex-grow flex flex-col">
                           <textarea 
-                            readOnly 
-                            value={card.template}
+                            value={editedTemplates[`${section.id}-${cIdx}`] !== undefined ? editedTemplates[`${section.id}-${cIdx}`] : card.template}
+                            onChange={(e) => handleTemplateChange(`${section.id}-${cIdx}`, e.target.value)}
                             className="w-full flex-grow min-h-[250px] p-4 bg-gray-50 border border-gray-200 rounded-2xl text-sm text-gray-700 font-mono resize-none focus:outline-none focus:ring-2 focus:ring-primary-500/20"
                           />
                           <div className="flex justify-end mt-4">
                             <button
-                              onClick={() => handleCopy(card.template, `${section.id}-${cIdx}`)}
+                              onClick={() => handleCopy(editedTemplates[`${section.id}-${cIdx}`] !== undefined ? editedTemplates[`${section.id}-${cIdx}`] : card.template, `${section.id}-${cIdx}`)}
                               className="inline-flex items-center px-4 py-2 bg-primary-50 hover:bg-primary-100 text-primary-700 rounded-full text-sm font-semibold transition-colors"
                             >
                               {copiedId === `${section.id}-${cIdx}` ? (
