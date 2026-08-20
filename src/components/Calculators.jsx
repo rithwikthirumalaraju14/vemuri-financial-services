@@ -4,7 +4,22 @@ import Sip from '../components/Sip'
 import Swp from '../components/Swp'
 import Fd from '../components/Fd'
 import Inflation from '../components/Inflation'
-import { Calculator } from 'lucide-react'
+import { Calculator, ChevronRight } from 'lucide-react'
+
+const popularCalculators = [
+  { id: 'sip', name: 'SIP Calculator', desc: 'Plan monthly investments and estimate wealth growth over time.' },
+  { id: 'lumpsum', name: 'Lumpsum Calculator', desc: 'Estimate returns on a one-time investment at a given rate.' },
+  { id: 'swp', name: 'SWP Calculator', desc: 'Plan systematic withdrawals from your mutual fund corpus.' },
+  { id: 'fd', name: 'FD Calculator', desc: 'Calculate maturity amount on fixed deposits at your bank rate.' },
+  { id: 'inflation', name: 'Inflation Calculator', desc: 'See how inflation erodes your money\'s purchasing power.' }
+  // { id: 'mf-returns', name: 'Mutual Fund Returns', desc: 'Check projected returns for lumpsum or SIP in mutual funds.' },
+  // { id: 'ppf', name: 'PPF Calculator', desc: 'Estimate Public Provident Fund maturity with 15-year lock-in.' },
+  // { id: 'epf', name: 'EPF Calculator', desc: 'Calculate Employee Provident Fund balance at retirement.' },
+  // { id: 'rd', name: 'RD Calculator', desc: 'Forecast your recurring deposit maturity value.' },
+  // { id: 'emi', name: 'EMI Calculator', desc: 'Find your monthly EMI for home, car, or personal loans.' },
+  // { id: 'nps', name: 'NPS Calculator', desc: 'Project your National Pension System corpus and pension.' },
+  // { id: 'income-tax', name: 'Income Tax Calculator', desc: 'Estimate your tax liability under old and new regimes.' },
+]
 
 export default function Calculators() {
   const [activeTab, setActiveTab] = useState('sip')
@@ -16,10 +31,20 @@ export default function Calculators() {
     { id: 'inflation', name: 'Inflation Calculator' }
   ]
 
+  const handleCalcClick = (id) => {
+    // Map sidebar clicks to actual calculator tabs
+    if (id === 'lumpsum') {
+      setActiveTab('sip') // Lumpsum is inside SIP component
+    } else if (['sip', 'swp', 'fd', 'inflation'].includes(id)) {
+      setActiveTab(id)
+    }
+    // For other calculators we just highlight them (they don't have full components yet)
+  }
+
   return (
     <section id="sip" className="py-8 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        
+
         {/* Header Section */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
           <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary-500">
@@ -50,19 +75,67 @@ export default function Calculators() {
           ))}
         </div>
 
-        {/* Content Area */}
-        <motion.div
-          key={activeTab}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="w-full"
-        >
-          {activeTab === 'sip' && <Sip />}
-          {activeTab === 'swp' && <Swp />}
-          {activeTab === 'fd' && <Fd />}
-          {activeTab === 'inflation' && <Inflation />}
-        </motion.div>
+        {/* Main Content: Calculator + Sidebar */}
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Calculator Area */}
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="flex-1 min-w-0"
+          >
+            {activeTab === 'sip' && <Sip />}
+            {activeTab === 'swp' && <Swp />}
+            {activeTab === 'fd' && <Fd />}
+            {activeTab === 'inflation' && <Inflation />}
+          </motion.div>
+
+          {/* Sidebar: Popular Calculators */}
+          <div className="w-full lg:w-80 flex-shrink-0">
+            <div className="bg-white rounded-3xl border border-gray-100 shadow-lg overflow-hidden sticky top-32">
+              <div className="bg-gray-50 px-6 py-4 border-b border-gray-100">
+                <h4 className="font-bold text-gray-900 flex items-center gap-2">
+                  <Calculator className="w-5 h-5 text-primary-500" />
+                  Popular Calculators
+                </h4>
+              </div>
+              <div className="divide-y divide-gray-50">
+                {popularCalculators.map((calc) => (
+                  <button
+                    key={calc.id}
+                    onClick={() => handleCalcClick(calc.id)}
+                    className={`w-full text-left px-6 py-3.5 hover:bg-primary-50 transition-colors group ${
+                      (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
+                        ? 'bg-primary-50/50'
+                        : ''
+                    }`}
+                  >
+                    <div className="flex items-center justify-between">
+                      <div className="min-w-0">
+                        <span className={`text-sm font-semibold block ${
+                          (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
+                            ? 'text-primary-600'
+                            : 'text-gray-800 group-hover:text-primary-600'
+                        }`}>
+                          {calc.name}
+                        </span>
+                        <span className="text-xs text-gray-400 leading-snug block mt-0.5 line-clamp-2">
+                          {calc.desc}
+                        </span>
+                      </div>
+                      <ChevronRight className={`w-4 h-4 flex-shrink-0 ml-2 transition-colors ${
+                        (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
+                          ? 'text-primary-500'
+                          : 'text-gray-300 group-hover:text-primary-400'
+                      }`} />
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>

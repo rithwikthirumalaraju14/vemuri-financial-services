@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 
 export default function Sip() {
+  const [mode, setMode] = useState('sip') // 'sip' or 'lumpsum'
   const [investment, setInvestment] = useState(10000)
+  const [lumpsum, setLumpsum] = useState(100000)
   const [rate, setRate] = useState(12)
   const [years, setYears] = useState(10)
 
-  // Logic: M = P × ({[1 + i]^n – 1} / i) × (1 + i)
   const calculateSIP = () => {
     const monthlyRate = rate / 12 / 100
     const months = years * 12
@@ -18,67 +19,202 @@ export default function Sip() {
     }
   }
 
-  const results = calculateSIP()
+  const calculateLumpsum = () => {
+    const futureValue = lumpsum * Math.pow(1 + rate / 100, years)
+    return {
+      futureValue: Math.round(futureValue),
+      totalInvested: lumpsum,
+      wealthGained: Math.round(futureValue - lumpsum)
+    }
+  }
+
+  const results = mode === 'sip' ? calculateSIP() : calculateLumpsum()
+
+  // Donut chart calculation
+  const investedPercent = results.totalInvested / results.futureValue * 100
+  const returnsPercent = 100 - investedPercent
+  const circumference = 2 * Math.PI * 70
+  const investedDash = (investedPercent / 100) * circumference
+  const returnsDash = (returnsPercent / 100) * circumference
 
   return (
     <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-12 border border-gray-100 max-w-4xl mx-auto my-12">
+      {/* SIP / Lumpsum Toggle */}
       <div className="mb-8">
-        <h3 className="text-3xl font-bold text-gray-900 mb-2">SIP Calculator</h3>
-        <p className="text-gray-600">Calculate the future value of your systematic investment plan.</p>
+        <div className="inline-flex bg-gray-100 rounded-xl p-1 mb-4">
+          <button
+            onClick={() => setMode('sip')}
+            className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 ${
+              mode === 'sip'
+                ? 'bg-primary-500 text-white shadow-md'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            SIP
+          </button>
+          <button
+            onClick={() => setMode('lumpsum')}
+            className={`px-6 py-2.5 rounded-lg text-sm font-bold transition-all duration-300 ${
+              mode === 'lumpsum'
+                ? 'bg-primary-500 text-white shadow-md'
+                : 'text-gray-600 hover:text-gray-900'
+            }`}
+          >
+            Lumpsum
+          </button>
+        </div>
+        <h3 className="text-3xl font-bold text-gray-900 mb-2">
+          {mode === 'sip' ? 'SIP Calculator' : 'Lumpsum Calculator'}
+        </h3>
+        <p className="text-gray-600">
+          {mode === 'sip'
+            ? 'Calculate the future value of your systematic investment plan.'
+            : 'Calculate the future value of a one-time lumpsum investment.'}
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        {/* Sliders */}
         <div className="space-y-6">
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">Monthly Investment (₹)</label>
-            <input 
-              type="range" 
-              min="500" max="100000" step="500"
-              value={investment}
-              onChange={(e) => setInvestment(Number(e.target.value))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500" 
-            />
-            <div className="mt-2 text-right font-bold text-primary-600 text-xl">₹{investment.toLocaleString()}</div>
-          </div>
+          {mode === 'sip' ? (
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-sm font-semibold text-gray-700">Monthly Investment</label>
+                <div className="bg-primary-50 border border-primary-100 rounded-lg px-3 py-1">
+                  <span className="text-primary-600 font-bold">₹{investment.toLocaleString()}</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="500" max="100000" step="500"
+                value={investment}
+                onChange={(e) => setInvestment(Number(e.target.value))}
+                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
+              />
+              <div className="flex justify-between text-xs text-gray-400 mt-1">
+                <span>₹500</span>
+                <span>₹1,00,000</span>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-sm font-semibold text-gray-700">Total Investment</label>
+                <div className="bg-primary-50 border border-primary-100 rounded-lg px-3 py-1">
+                  <span className="text-primary-600 font-bold">₹{lumpsum.toLocaleString()}</span>
+                </div>
+              </div>
+              <input
+                type="range"
+                min="10000" max="10000000" step="10000"
+                value={lumpsum}
+                onChange={(e) => setLumpsum(Number(e.target.value))}
+                className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
+              />
+              <div className="flex justify-between text-xs text-gray-400 mt-1">
+                <span>₹10,000</span>
+                <span>₹1,00,00,000</span>
+              </div>
+            </div>
+          )}
 
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">Expected Return Rate (p.a %)</label>
-            <input 
-              type="range" 
+            <div className="flex items-center justify-between mb-2">
+              <label className="text-sm font-semibold text-gray-700">Expected Return Rate (p.a)</label>
+              <div className="bg-primary-50 border border-primary-100 rounded-lg px-3 py-1">
+                <span className="text-primary-600 font-bold">{rate}%</span>
+              </div>
+            </div>
+            <input
+              type="range"
               min="1" max="30" step="0.5"
               value={rate}
               onChange={(e) => setRate(Number(e.target.value))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500" 
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
             />
-            <div className="mt-2 text-right font-bold text-primary-600 text-xl">{rate}%</div>
+            <div className="flex justify-between text-xs text-gray-400 mt-1">
+              <span>1%</span>
+              <span>30%</span>
+            </div>
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">Time Period (Years)</label>
-            <input 
-              type="range" 
+            <div className="flex items-center justify-between mb-2">
+              <label className="text-sm font-semibold text-gray-700">Time Period</label>
+              <div className="bg-primary-50 border border-primary-100 rounded-lg px-3 py-1">
+                <span className="text-primary-600 font-bold">{years} Yr{years > 1 ? 's' : ''}</span>
+              </div>
+            </div>
+            <input
+              type="range"
               min="1" max="40" step="1"
               value={years}
               onChange={(e) => setYears(Number(e.target.value))}
-              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500" 
+              className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
             />
-            <div className="mt-2 text-right font-bold text-primary-600 text-xl">{years} Yrs</div>
+            <div className="flex justify-between text-xs text-gray-400 mt-1">
+              <span>1 Yr</span>
+              <span>40 Yrs</span>
+            </div>
+          </div>
+
+          {/* Results below sliders */}
+          <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 space-y-3 mt-4">
+            <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-500">Invested amount</span>
+              <span className="font-bold text-gray-900">₹{results.totalInvested.toLocaleString()}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-sm text-gray-500">Est. returns</span>
+              <span className="font-bold text-green-600">₹{results.wealthGained.toLocaleString()}</span>
+            </div>
+            <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
+              <span className="text-sm font-semibold text-gray-700">Total value</span>
+              <span className="text-xl font-black text-primary-600">₹{results.futureValue.toLocaleString()}</span>
+            </div>
           </div>
         </div>
 
-        <div className="bg-primary-50 rounded-2xl p-8 flex flex-col justify-center items-center text-center border border-primary-100">
-          <div className="mb-6 w-full">
-            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-1">Total Value</p>
-            <p className="text-4xl font-bold text-primary-600">₹{results.futureValue.toLocaleString()}</p>
-          </div>
-          <div className="grid grid-cols-2 gap-4 w-full pt-6 border-t border-primary-200">
-            <div>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Invested</p>
-              <p className="text-lg font-bold text-gray-900">₹{results.totalInvested.toLocaleString()}</p>
+        {/* Donut Chart */}
+        <div className="flex flex-col items-center justify-center">
+          <div className="relative w-52 h-52 mb-8">
+            <svg viewBox="0 0 160 160" className="w-full h-full transform -rotate-90">
+              {/* Invested amount arc */}
+              <circle
+                cx="80" cy="80" r="70"
+                fill="none"
+                stroke="#e0e7ff"
+                strokeWidth="18"
+                strokeDasharray={`${investedDash} ${circumference - investedDash}`}
+                strokeDashoffset="0"
+                strokeLinecap="round"
+              />
+              {/* Returns arc */}
+              <circle
+                cx="80" cy="80" r="70"
+                fill="none"
+                stroke="#6366f1"
+                strokeWidth="18"
+                strokeDasharray={`${returnsDash} ${circumference - returnsDash}`}
+                strokeDashoffset={`${-investedDash}`}
+                strokeLinecap="round"
+              />
+            </svg>
+            <div className="absolute inset-0 flex flex-col items-center justify-center">
+              <span className="text-xs text-gray-500 font-medium">Total Value</span>
+              <span className="text-lg font-black text-gray-900">₹{results.futureValue.toLocaleString()}</span>
             </div>
-            <div>
-              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">Est. Returns</p>
-              <p className="text-lg font-bold text-green-600">₹{results.wealthGained.toLocaleString()}</p>
+          </div>
+
+          {/* Legend */}
+          <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-indigo-200"></div>
+              <span className="text-sm text-gray-600">Invested amount</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-indigo-500"></div>
+              <span className="text-sm text-gray-600">Est. returns</span>
             </div>
           </div>
         </div>
