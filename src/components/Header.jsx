@@ -73,7 +73,7 @@ export default function Header({ currentView, onViewChange }) {
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg border-b border-gray-100/50"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-6">
-        <div className="flex py-3 md:py-4 items-center justify-between">
+        <div className="flex py-0 md:py-1 items-center justify-between">
           
           <a href="#" onClick={(e) => { e.preventDefault(); onViewChange('home'); window.scrollTo(0,0); }} className="flex items-center space-x-3 md:space-x-4">
             <div className="shine-wrapper rounded-xl flex-shrink-0">
@@ -126,7 +126,7 @@ export default function Header({ currentView, onViewChange }) {
                 {/* VFS Office Dropdown */}
                 <div className="relative group">
                   <button className="px-4 py-2.5 text-xs font-bold text-gray-600 bg-gray-50 border border-gray-100 hover:bg-white hover:text-primary-600 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-1">
-                    VFS Office
+                    {currentView === 'vfs-benefits' ? 'Distributor Backoffice' : 'VFS Office'}
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                   </button>
                   <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-100 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-right scale-95 group-hover:scale-100 flex flex-col p-1">
@@ -206,7 +206,9 @@ export default function Header({ currentView, onViewChange }) {
               </button>
             )}
             <div className="flex flex-col space-y-2 mt-4 bg-gray-50 p-4 rounded-2xl border border-gray-100">
-              <span className="text-xs font-bold tracking-widest text-gray-500 uppercase px-2 mb-1">VFS Office</span>
+              <span className="text-xs font-bold tracking-widest text-gray-500 uppercase px-2 mb-1">
+                {currentView === 'vfs-benefits' ? 'Distributor Backoffice' : 'VFS Office'}
+              </span>
               <button 
                 onClick={() => { onViewChange('vfs-benefits'); window.scrollTo(0, 0); setIsOpen(false); }}
                 className="text-left px-4 py-2.5 text-sm font-semibold text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-xl"
