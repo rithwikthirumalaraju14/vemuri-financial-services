@@ -58,22 +58,6 @@ export default function Calculators() {
           </p>
         </div>
 
-        {/* Navigation Tabs */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
-                activeTab === tab.id
-                  ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30'
-                  : 'bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-900 shadow-sm border border-gray-100'
-              }`}
-            >
-              {tab.name}
-            </button>
-          ))}
-        </div>
 
         {/* Main Content: Calculator + Sidebar */}
         <div className="flex flex-col lg:flex-row gap-8">
