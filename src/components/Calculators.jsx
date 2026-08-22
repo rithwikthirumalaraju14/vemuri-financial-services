@@ -34,6 +34,12 @@ export default function Calculators() {
   const handleCalcClick = (id) => {
     if (['sip', 'lumpsum', 'swp', 'fd', 'inflation'].includes(id)) {
       setActiveTab(id)
+      // Scroll up to the calculator area, especially important for mobile 
+      // where the sidebar is below the calculator
+      const el = document.getElementById('sip')
+      if (el) {
+        window.scrollTo({ top: el.offsetTop - 100, behavior: 'smooth' })
+      }
     }
   }
 
@@ -42,7 +48,7 @@ export default function Calculators() {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto mb-4 space-y-2">
+        <div className="text-center max-w-3xl mx-auto mb-0 space-y-2">
           <h2 className="text-sm font-bold uppercase tracking-[0.2em] text-primary-500">
             Planning Tools
           </h2>
@@ -55,7 +61,7 @@ export default function Calculators() {
         </div>
 
         {/* Main Content: Calculator + Sidebar */}
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col lg:flex-row gap-8 -mt-2">
           {/* Calculator Area */}
           <motion.div
             key={activeTab}
@@ -85,15 +91,13 @@ export default function Calculators() {
                     key={calc.id}
                     onClick={() => handleCalcClick(calc.id)}
                     className={`w-full text-left px-6 py-3.5 hover:bg-primary-50 transition-colors group ${
-                      (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
-                        ? 'bg-primary-50/50'
-                        : ''
+                      activeTab === calc.id ? 'bg-primary-50/50' : ''
                     }`}
                   >
                     <div className="flex items-center justify-between">
                       <div className="min-w-0">
                         <span className={`text-sm font-semibold block ${
-                          (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
+                          activeTab === calc.id
                             ? 'text-primary-600'
                             : 'text-gray-800 group-hover:text-primary-600'
                         }`}>
@@ -104,7 +108,7 @@ export default function Calculators() {
                         </span>
                       </div>
                       <ChevronRight className={`w-4 h-4 flex-shrink-0 ml-2 transition-colors ${
-                        (activeTab === calc.id || (calc.id === 'lumpsum' && activeTab === 'sip'))
+                        activeTab === calc.id
                           ? 'text-primary-500'
                           : 'text-gray-300 group-hover:text-primary-400'
                       }`} />

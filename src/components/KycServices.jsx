@@ -116,7 +116,7 @@ export default function KycServices() {
                 Need help completing your KYC?
               </p>
               <a href="tel:+919886291668" className="text-2xl font-black text-primary-600 hover:text-primary-700 transition-colors">
-                98862 91668
+                Call Us
               </a>
               <p className="text-xs text-gray-500 mt-4 font-semibold uppercase tracking-wider">
                 Vemuri Financial Services

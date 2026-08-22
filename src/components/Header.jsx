@@ -12,7 +12,6 @@ export default function Header({ currentView, onViewChange }) {
     { name: 'Services', href: '#services' },
     { name: 'Compare', href: '#compare' },
     { name: 'Calculators', href: '#sip' },
-    
   ]
 
   const partnerLinks = [

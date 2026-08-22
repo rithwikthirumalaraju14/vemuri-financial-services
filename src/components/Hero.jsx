@@ -14,7 +14,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="relative pt-28 md:pt-32 pb-16 overflow-hidden bg-white">
+    <section id="home" className="relative pt-20 md:pt-28 pb-16 overflow-hidden bg-white">
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100 rounded-full blur-[120px] -mr-40 -mt-20" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-100 rounded-full blur-[120px] -ml-40 -mb-20" />
@@ -72,14 +72,16 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary-500 text-white font-semibold text-base shadow-xl shadow-primary-500/20 hover:bg-primary-600 transition-colors"
+                onClick={(e) => { e.preventDefault(); const el = document.querySelector('#contact'); if (el) window.scrollTo({ top: el.offsetTop - 100, behavior: 'smooth' }); }}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-primary-500 text-white font-semibold text-base shadow-xl shadow-primary-500/20 hover:bg-primary-600 transition-colors cursor-pointer"
               >
                 Start your plan
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a
                 href="#solutions"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-gray-200 text-gray-900 font-semibold text-base hover:border-primary-500 hover:text-primary-600 transition-colors"
+                onClick={(e) => { e.preventDefault(); const el = document.querySelector('#solutions'); if (el) window.scrollTo({ top: el.offsetTop - 100, behavior: 'smooth' }); }}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full border-2 border-gray-200 text-gray-900 font-semibold text-base hover:border-primary-500 hover:text-primary-600 transition-colors cursor-pointer"
               >
                 Explore solutions
               </a>

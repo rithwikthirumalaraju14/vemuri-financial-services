@@ -159,7 +159,8 @@ export default function Contact() {
               <div className="mt-8 pt-6">
                 <a 
                   href="#faq"
-                  className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white border border-white/20 hover:bg-white/10 rounded-xl transition-colors w-full"
+                  onClick={(e) => { e.preventDefault(); const el = document.querySelector('#faq'); if (el) window.scrollTo({ top: el.offsetTop - 100, behavior: 'smooth' }); }}
+                  className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white border border-white/20 hover:bg-white/10 rounded-xl transition-colors w-full cursor-pointer"
                 >
                   View FAQs
                 </a>
